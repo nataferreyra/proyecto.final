@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+section {
+    height: 100vh;
+}
+
+/*home*/
+section#Presentación{
+    background: linear-gradient(lightslategray, lightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#Presentación img{
+    width: 175px;
+    border-radius: 50%;
+    margin: 50px;
+    border: 7px solid lightgray;
+}
+
+h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    color: lightgrey;
+}
+
+section#Presentación h2{
+    font-size: 40px;
+    color: lightgrey;
+}
+
+/*Estudios*/
+section#Estudios{
+    background: linear-gradient(lightgrey, 85%, lightslategray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#Estudios h2{
+    text-transform: uppercase;
+    font-size: 85px;
+    color: lightslategray;
+}
+
+
+.texto-estudios{
+    font-size: 25px;
+    color: lightslategray;
+}
+
+/*Experiencia*/
+section#Experiencia{
+    background: linear-gradient(lightslategray, 85%, lightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#Experiencia h2{
+    text-transform: uppercase;
+    font-size: 85px;
+    color: lightgrey;
+}
+
+.Texto1 {
+    font-size: 25px;
+    color: lightgrey;
+}
+
+/*Sección de Skills*/
+section#Skills {
+    background: linear-gradient(lightgrey, 85%, lightslategray);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.contenedor {
+    width: 60%;
+    padding: 30px 30px 50px;
+    background: linear-gradient(450deg, lightslategray, black);
+    border-radius: 10px;
+}
+
+.contenedor {
+    color: lightsalmon;
+    font-weight: 500;
+}
+
+section#Skills h2 {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu{
+    position: relative;
+    border: 1px solid lightcoral;
+    border-radius: 20px;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: lightsalmon;
+}
+
+/*Efectos de la barra */
+
+#redess-menu {
+    animation: redess-barra 2s forwards;
+}
+
+@keyframes redess-barra{
+    100%{
+        width: 100%;
+    }
+}
+
+#Redacción-menu {
+    animation: redac-barra 2s forwards;
+}
+
+@keyframes redac-barra{
+    100%{
+        width: 85%;
+    }
+}
+
+#Manejoweb-menu {
+    animation: manejo-barra 2s forwards;
+}
+
+@keyframes manejo-barra{
+    100%{
+        width: 75%;
+    }
+}
+
+#Rp-menu {
+    animation: rp-barra 2s forwards;
+}
+
+@keyframes rp-barra{
+    100%{
+        width: 60%;
+    }
+}
+
+#fotos-menu {
+    animation: fotos-barra 2s forwards;
+}
+
+@keyframes fotos-barra{
+    100%{
+        width: 90%;
+    }
+}
+/*Fin de efectos de la barra */
+
+/*Header*/
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.935);
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0,5s ease;
+}
+
+.logo{
+    font-size: 25px;
+    color: darksalmon;
+    font-weight: 100;
+}
+
+.meniu{
+    display: flex;
+}
+
+.meniu li{
+    list-style: none;
+    margin: 10px;
+}
+
+.meniu li a{
+    color: darksalmon;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0,5s ease;
+}
+
+.meniu li a:hover{
+    padding: 5px 10px;
+    background: darksalmon;
+    color: black;
+    border-radius: 15px;
+}
+
+/*Footer*/
+footer{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+footer h3{
+    color: darksalmon;
+    font-size: 25px;
+}
+
+/*Contacto*/
+form{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing:border-box;
+}
+
+#Contacto {
+    height: 100vh;
+    background: linear-gradient(lightslategray, 85%, lightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contacto h2{
+    margin: 0;
+    text-align: center;
+    color: darksalmon;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.center {
+    text-align: center;  
+}
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, darksalmon, lightcoral);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+#Contacto p{
+    margin: 10px;
+    margin-left: 0;
+    margin-top: 30px;
+}

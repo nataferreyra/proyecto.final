@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">TICMAS</div>
+            <ul class="meniu">
+                <li><a href="#Presentación">Home</a></li>
+                <li><a href="#Estudios">Estudios</a></li>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main></main>
+        <section id="Presentación">
+            <h1>Julián Herrera</h1>
+            <h2>Community Manager & Comunicólogo</h2>
+            <img src="https://randomuser.me/api/portraits/men/24.jpg">
+        </section>
+
+        <section id="Estudios">
+            <div class="titulo-estudios">
+                <h2>Estudios</h2>
+            </div>
+
+            <div class="texto-estudios">
+                <p>
+                    <h3>2004-2008 Universidad de Comunicación </h3>
+                    Licenciatura en Comunicación.
+
+                    <h3>2008-2010 Universidad de Medios</h3>
+                    Diplomado de Estrategias Digitales.
+
+                    <h3>2010-2012 Universidad de Medios</h3>
+                    Certificado de Manejo en Redes Sociales.
+                </p>
+            </div>
+        </section>
+            
+        <section id="Experiencia">
+            <div class="Titulo1">
+            <h2>Experiencia</h2>
+            </div>
+
+            <div class="Texto1">
+                <p>
+                    <h3>2012 - Estudio Shonos</h3>
+                    Coordinación de medios digitales.<br>
+                    Creación de estrategias para redes sociales.<br>
+                    Coordinación de creación de contenido con el equipo de diseño.<br>
+                    Revisión de textos para redes sociales y páginas web de la empresa.<br>
+                    Organización de archivos.
+
+                    <h3>2017 - Aromas de Aquí</h3>
+                    Community Manager Sr.<br>
+                    Creación de estrategias para redes sociales.<br>
+                    Manejo de calendario de publicaciones.<br>
+                    Revisión de textos para redes sociales de la empresa.<br>
+                    Organización de archivos.
+
+                    <h3>2021 - Internship en Tanka S.R.L</h3>
+                    Bancario de redes sociales.<br>
+                    Creación de estrategias para redes sociales.<br>
+                    Revisión de textos para redes socilaes y páginas web de la empresa.<br>
+                    Organización de archivos.
+                </p>
+            </div>    
+        </section>
+
+        <section id="Skills">
+                <div class="contenedor">
+                    <h2>Skills</h2>
+
+                    <div class="skills">
+                        <div class="detalles">
+                            <span>Redes Sociales</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="redess-menu"></div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <div class="detalles">
+                            <span>Redacción</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="Redacción-menu"></div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <div class="detalles">
+                            <span>Manejo de páginas web</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="Manejoweb-menu"></div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <div class="detalles">
+                            <span>Rlaciones públicas</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="Rp-menu"></div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <div class="detalles">
+                            <span>Fotografía</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="menu">
+                            <div id="fotos-menu"></div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        
+        <div id="Contacto">
+            <form>
+                <h2>Contáctame</h2>
+        
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Tu nombre">
+                <small class="error"></small>
+        
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Tu email">
+                <small class="error"></small>
+        
+                <label for="message">Mensaje:</label>
+                <textarea id="message" placeholder="Tu mensaje" rows="6"></textarea>
+                <small class="error"></small>
+        
+                <div class="center">
+                        <input type="submit" value="Enviar Mensaje">
+                        <p id="succsess"></p>
+                </div>
+                <p id="numero">Teléfono celular: (204) 206-8758</p>
+                <button type="button" id="boton">Cambiar tipo de teléfono</button>
+                <script src="Funciones.js"></script>  
+            </form>
+         </div> 
+
+    <footer>
+        <h3>Proyecto desarrollado por Natanael Ferreyra para la Academia
+        Ticmas bajo el programa Argentina Programa 4.0
+        </h3>
+    </footer>
+</body>
+</html>
